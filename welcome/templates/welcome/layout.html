@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Ganesh Dokala</title>
+    <script type="text/javascript" src="{% static 'JS/particles.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'JS/app.js' %}"></script>
+    
+    <link rel="stylesheet" href="{% static 'welcome/welcome.css' %}">
+    <script>src="https://code.jquery.com/jquery-3.6.0.min.js"</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+    <script src="{% static 'JS/script.js' %}"></script>
+   
+  
+</head>
+<body id={{ name }}>
+  
+  <nav class="navbar" id="navbar">
+      <div class="maxwidth">
+        <div class="logo" id="logo"><a href="#">portfo<span>lio</span></a></div>
+          <ul class="menu">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'skills'%}">Skills</a></li>
+              <li><a href="{% url 'projects'%}">Projects</a></li>
+              <li><a href="/static/welcome/sai.pdf" target=_blank class="resume">resume</a></li>
+              
+              
+          </ul>
+         
+        </div>
+      
+  </nav>
+  
+
+  
+    {% block body%}
+    
+    {% endblock %}
+</body>
+</html>
