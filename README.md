@@ -4,10 +4,10 @@ check website live:iamdsg.herokuapp.com
 
 
 
-##this is a Basic Portifolio website
-  #Backend:
+## this is a Basic Portifolio website
+  # Backend:
           Django
-  #Frontend:
+  # Frontend:
           HTML5
           CSS
           JavaScript
