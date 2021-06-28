@@ -1,6 +1,6 @@
 # Portfolio
 
-check website live: [a link](iamdsg.herokuapp.com)
+check website live: [iamdsg.herokuapp.com](iamdsg.herokuapp.com)
 
 
 
