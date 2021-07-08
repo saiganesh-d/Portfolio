@@ -1,0 +1,106 @@
+{% extends "welcome/layout.html" %}
+
+   
+{% block body%}
+
+<div class="bg2">
+   
+<div class="blog-posts">
+    <div class="post">
+         <img src="/static/welcome/Email.png" alt="my image" class="post-image" >
+         <div class="post-content">
+             <h3>this email project built on html, css,JS as frontend and django as backend</h3>
+             <div class="link">
+             <a href="https://github.com/saiganesh-d/CS50W-mail-with-django-html-js" target="_blank" rel="noopener noreferrer">code</a>
+             <a href="http://saiganesh196.herokuapp.com" target="_blank" rel="noopener noreferrer">deployed webapp</a>
+            </div>
+         </div>
+    </div>
+    <div class="post">
+        <img src="/static/welcome/car.png"  alt="my image" class="post-image">
+        <div class="post-content">
+            <h3>this is car predction Machine Learning Project, In this I used randomforest regression to predict cars value</h3>
+            <div class="link">
+                <a href="https://github.com/saiganesh-d/Car-price-predict" target="_blank" rel="noopener noreferrer">code</a>
+                <a href="{% url 'cars'%}" target="_blank" rel="noopener noreferrer">deployed webapp</a>
+            </div>
+        </div>
+        
+   </div>
+   <div class="post">
+        <img src="/static/welcome/ecom.png" alt="my image" class="post-image">
+        <div class="post-content">
+            <h3>this email project built on html, css,JavaScript as frontend and django as backend</h3>
+            <a href="http://github.com" target="_blank" rel="noopener noreferrer">github repo</a>
+        </div>  
+    </div>
+    <div class="post">
+        <img src="/static/welcome/pickme-app.png" alt="my image" class="post-image">
+        <div class="post-content">
+            <h3> this cat vs non cat Project is based on deep learning</h3>
+            <a href="https://github.com/saiganesh-d/prediction-of-cat-vs-non-cat" target="_blank" rel="noopener noreferrer">github repo</a>
+        </div>  
+    </div>
+    <div class="post">
+        <img src="/static/welcome/pickme-app.png" alt="my image" class="post-image">
+        <div class="post-content">
+            <h3>Its Mall analysis project, In this we will analysis the given city and find best place to esatblish a new mall.</h3>
+            <a href="https://github.com/saiganesh-d/MALL-analysis" target="_blank" rel="noopener noreferrer">github repo</a>
+        </div>  
+    </div>   <div class="post">
+        <img src="/static/welcome/pickme-app.png" alt="my image" class="post-image">
+        <div class="post-content">
+            <h3>Human emotions detector Project based on deep learning</h3>
+            <a href="https://github.com/saiganesh-d/facial-recognition" target="_blank" rel="noopener noreferrer">github repo</a>
+        </div>  
+    </div>
+
+
+
+
+</div>
+</div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>To get in touch with me</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/iamdsg016/" target="-blank">facebook</a></li>
+                    <li><a href="https://twitter.com/saiganesh016?s=08" target="-blank">twitter</a></li>
+                    <li><a href="https://www.instagram.com/iam.dsg/"  target="-blank">Instagram</a></li>
+                    <li><a href="https://www.reddit.com/user/Separate_Ad_780" target="-blank">reddit</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>To Play with me</h4>
+                <ul>
+                    <li><a href="#">Pubg Id: JOY々BADBLOOD</a></li>
+                    <li><a href="#">GTA V: iam_badblood</a></li>
+                    <li><a href="#">COC: bad blood(#L9GVPR0L)</a></li>
+                    <li><a href="#">COD: BADBLOOD007</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>To see my code work</h4>
+                <ul>
+                    <li><a href="https://github.com/saiganesh-d"  target="-blank">Github</a></li>
+                    <li><a href="https://stackoverflow.com/users/14101335/sai-ganesh-dokala"  target="-blank">Stack Overflow</a></li>
+                    
+                </ul>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+{% endblock %}

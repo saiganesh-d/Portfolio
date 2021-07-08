@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Predction</title>
+    <style>
+        body{
+            background: #fff;
+        }
+        .john{
+            display:flex; 
+            flex-direction: row; 
+            justify-content: center; 
+            align-items: center;
+        }
+        .par{
+            font-size: 3vw;
+            width: 100%;
+        }
+        @media screen and (max-width:450px){
+            .forms{
+                flex-direction: column;
+                color: brown;
+            }
+            .john{
+                display: block;
+                flex-direction: column;
+                color: brown;
+                justify-content: center; 
+                align-items: center;
+            }
+            .yt{
+                width: 320;
+                height: 260;
+            }
+           .par{
+               font-size: 3vw;
+               width: 50%;
+               
+           }
+        }
+            
+        
+    </style>
+    
+</head>
+<body>
+    <nav style="display: flex;">
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="https://www.kaggle.com/nehalbirla/vehicle-dataset-from-cardekho">Dataset</a></li>
+    </nav>
+    <div class="forms" style="color:blue">
+        <form action="{% url 'cars' %}" method="POST">
+            {% csrf_token %}
+            <h2>Predictive analysis</h2>
+            <div class="john">
+                
+                <div class="ss" style="display:block;">
+                <label for="Year">Year:</label>
+                <input style="width: 50%;" id="Year" name="Year" required="required">
+                </div>
+                <div class="ss" style="display: block;">
+                <label>What is the Showroom Price?(In lakhs)</label>
+                <input id="second" name="Present_Price" required="required">
+                </div>    
+                <div class="ss" style="display: block;">
+                <label>How Many Kilometers Drived?</label>
+                <input id="third" name="Kms_Driven" required="required">
+                </div>
+                <div class="ss" style="display: block;">
+                <lebel>How much owners previously had the car(0 or 1 or 3) ?<lebel>
+                <input id="fourth" name="Owner" required="required">
+                </div>
+                <div class="ss" style="display: block;">
+                <label>What Is the Fuel type?</label>
+                <select name="Fuel_Type_Petrol" id="fuel" required="required">
+                    <option value="Petrol">Petrol</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Diesel">CNG</option>
+                </select>
+                </div>
+                <div class="ss" style="display: block;">
+                <label>Are you A Dealer or Individual</label><select name="Seller_Type_Individual" id="resea" required="required">
+                    <option value="Dealer">Dealer</option>
+                    <option value="Individual">Individual</option>
+                </select>
+                </div>
+                <div class="ss" style="display: block;">
+                <label>Transmission type</label><select name="Transmission_Mannual" id="research" required="required">
+                    <option value="Mannual">Manual Car</option>
+                    <option value="Automatic">Automatic Car</option>
+                </select>
+                </div>
+            <br><br><button id="sub" type="submit " value="submit">Calculate the Selling Price</button>
+        </div>
+        
+        </form>
+        <br><br><h3>{{ prediction_text }}<h3>
+
+           
+                    <h1>About</h1>
+                    <p class="par" >This is Machine Learning project. I used randomforest regression to predict the cars price by training the model using <span><a href="https://www.kaggle.com/nehalbirla/vehicle-dataset-from-cardekho"> kaggle cars dataset</a></span> whole coding process
+                    
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MkLJHTg5jik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                    
+                
+</body>
+</html>
